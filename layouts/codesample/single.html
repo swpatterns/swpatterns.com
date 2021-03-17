@@ -1,0 +1,43 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js"
+></script>
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          {{ humanize .Section | upper  }}
+        </p>
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+      </header>
+      {{ with .Params.pattern }}
+    <ul id="pattern">
+      {{ range . }}
+        <li><a href="{{ "pattern/" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ with .Params.language }}
+    <ul id="language">
+      {{ range . }}
+        <li><a href="{{ "language/" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+   
+    {{ with .Params.gist }}
+    <div id="files">
+      {{ range . }}
+    <code data-gist-id="{{ . }}"></code>
+      {{ end }}
+    </div>
+    {{ end }}
+</article>
+  </div>
+{{ end }}
+

@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "SWPatterns.com"
+theme = "hugo-clarity"
+mainSection = "pattern"
+
+[taxonomies]
+pattern_types = "pattern_types"
+language = "language"
+pattern_usage = "pattern_usage"

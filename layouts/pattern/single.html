@@ -1,0 +1,37 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+{{- $s := .Site.Params }}
+{{- $p := .Params }}
+    <div class="{{ if ne $p.singleColumn true }}grid-inverse {{ end }}wrap content">
+
+    <article class="center cf pv5 ph3 ph4-ns mw7 post_content">
+      <header>
+        <p class="f6 b helvetica tracked">
+          {{ humanize .Section | upper  }}
+        </p>
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+      </header>
+      {{ partial "share" . }}
+      {{ with .Params.pattern_types }}
+    <ul id="pattern_types">
+      {{ range . }}
+        <li><a href="{{ "pattern_types/" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        <img src="https://yuml.me/diagram/class/{{ .Params.classdiagram }}">
+      </div>
+    
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        {{ .Content }}
+      </div>
+
+      <h3>Samples</h3>
+      
+      {{ partial "all-taxonomies" . }}
+    </article>
+  </div>
+{{ end }}
