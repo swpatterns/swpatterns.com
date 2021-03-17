@@ -2,9 +2,32 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "SWPatterns.com"
 theme = "hugo-clarity"
-mainSection = "pattern"
+
+showShare = true
+
 
 [taxonomies]
 pattern_types = "pattern_types"
 language = "language"
 pattern_usage = "pattern_usage"
+[params]
+mainSections = ["pattern"]
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-house'></i>"
+    url = "/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Patterns"
+    url = "/pattern/"
+    weight = -100
+
+  [[menu.main]]
+    name = "Contribute"
+    pre = "<i class='fa fa-gh'></i>"
+    url = "https://github.com/swpatterns/swpatterns.com"
+    weight = -90
