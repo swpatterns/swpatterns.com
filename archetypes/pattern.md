@@ -4,7 +4,8 @@ date: {{ .Date }}
 draft: false
 pattern_types: ["GOF",]
 wikipedia: ""
-classdiagram: ""
+diagramtype: "class"
+diagram: ""
 
 ---
 

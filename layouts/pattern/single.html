@@ -13,18 +13,21 @@
           {{ .Title }}
         </h1>
       </header>
+      <div>
       {{ partial "share" . }}
+    </div>
       {{ with .Params.pattern_types }}
-    <ul id="pattern_types">
+    <div id="pattern_types" class="post_meta">
       {{ range . }}
-        <li><a href="{{ "pattern_types/" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+        <a href="{{ "pattern_types/" | absURL}}{{ . | urlize }}" class="post_tag button button_translucent">{{ . }}</a> 
       {{ end }}
-    </ul>
+    </div>
     {{ end }}
+    {{ if isset .Params "diagram" }}
     <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <img src="https://yuml.me/diagram/class/{{ .Params.classdiagram }}">
-      </div>
-    
+      <img src="https://yuml.me/diagram/{{ .Params.diagramtype }}/{{ .Params.diagram }}">
+    </div>
+    {{ end }}
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
         {{ .Content }}
       </div>
