@@ -1,0 +1,13 @@
+{{- $s := .Site.Params }}
+{{ $t := .Site.Title }}
+{{- if or .Params.enableMathNotation $s.enableMathNotation }}
+  {{ partialCached "math" . }}
+{{- end }}
+<footer class="footer">
+  <div class="footer_inner wrap pale">
+    <img src='{{ absURL (default "icons/apple-touch-icon.png" $s.footerLogo) }}' class="icon icon_2 transparent" alt="{{ $t }}">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/it/80x15.png" /></a>
+      - Made with ❤️ in Bologna</p>
+    {{- partialCached "top" .}}
+  </div>
+</footer>
