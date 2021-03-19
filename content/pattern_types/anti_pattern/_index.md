@@ -1,5 +1,5 @@
 ---
 title: "Anti-Patterns"
 wikipedia: "https://en.wikipedia.org/wiki/Creational_pattern"
-description: "GOF patterns were the first design patterns described"
+description: "Anti-Patterns are horrible habits of developers and software companies that create huge technical debt and terrible coding smells in the software."
 ---
