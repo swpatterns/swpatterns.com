@@ -5,6 +5,7 @@ draft: false
 pattern_types: ["GOF", "Structural"]
 wikipedia: ""
 diagramtype: "class"
+code: true
 ---
 
 The adapter aims to be a converter between two specific interfaces: one belonging to "our" side of the application, the other to the library or other tool we need to interact with. This is very important, because it enables us to delay decisions, as the choice of a spcific implementation of the adapter becomes less important due to the fact that we are at that point using the adapter itself as our communication contract.

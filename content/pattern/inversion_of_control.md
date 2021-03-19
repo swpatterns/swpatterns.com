@@ -5,5 +5,6 @@ draft: true
 pattern_types: ["behavioral", "architectural"]
 wikipedia: "https://en.wikipedia.org/wiki/Inversion_of_control"
 diagramtype: "class"
+code: true
 ---
 

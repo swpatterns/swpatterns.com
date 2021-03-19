@@ -6,6 +6,7 @@ pattern_types: ["GOF", "Creational"]
 wikipedia: "https://en.wikipedia.org/wiki/Singleton_pattern"
 diagramtype: "class"
 
+code: true
 ---
 
 

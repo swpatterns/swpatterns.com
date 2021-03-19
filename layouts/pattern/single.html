@@ -32,9 +32,11 @@
         {{ .Content }}
       </div>
 
+      {{ if .Params.code }}
       <h3>Samples</h3>
       
       {{ partial "all-taxonomies" . }}
+      {{ end }}
     </article>
   </div>
 {{ end }}
