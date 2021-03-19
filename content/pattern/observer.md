@@ -5,6 +5,7 @@ draft: false
 pattern_types: ["GOF", "behavioral"]
 wikipedia: ""
 diagramtype: "class"
+diagram: "[Subject|+state|subscribe();notify()]-observers*>[AbstractObserver|update(subject)],[Subject]-.-[note: for o in observers: o.update(){bg:cornsilk}],[Subject]^[RealSubject||getState(); setState()],[AbstractObserver]^[ObserverImpl1|update(subject)],[AbstractObserver]^[ObserverImpl2|update(subject)]"
 code: true
 
 ---

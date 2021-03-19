@@ -7,3 +7,4 @@ language: ["Java"]
 gist: ["5925827"]
 ---
 
+Very simple and basic pure POJO implementation of the pattern

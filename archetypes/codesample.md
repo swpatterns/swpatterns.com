@@ -7,3 +7,4 @@ language: ""
 gist: ""
 ---
 
+Very simple default implementation

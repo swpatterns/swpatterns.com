@@ -31,7 +31,9 @@
       {{ end }}
     </div>
     {{ end }}
-   
+   <div>
+    {{ .Content }}
+  </div>
     {{ with .Params.gist }}
     <div id="files">
       {{ range . }}
