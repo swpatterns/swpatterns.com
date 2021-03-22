@@ -15,6 +15,10 @@
 &lt;p>Often used in combo with other patterns, such as [Inversion of Control] and several &lt;a href="http://www.swpatterns.com/pattern_types/factory/">Factories&lt;/a>&lt;/p>
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;p>Typical example of this pattern in a &amp;ldquo;pure&amp;rdquo; form is the Driver. Whether it is for printing or for database access, the API exposed by the common development systems just require the connection to the adapter and, with some kind of &lt;a href="http://www.swpatterns.com/pattern_types/factory/">Factory&lt;/a> or repository we get the specific implementation of what we need at the moment, based on the configuration of the system we have.&lt;/p></description></item><item><title>Singleton</title><link>http://www.swpatterns.com/pattern/singleton/</link><pubDate>Mon, 15 Mar 2021 13:24:44 +0100</pubDate><guid>http://www.swpatterns.com/pattern/singleton/</guid><description>
-&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Singleton design pattern enables us to guarantee unicity and a single entry point for services and accesses. Tipically it requires the standard contructor to be hidden in order to avoid direct instantiation, but modern frameworks use this pattern in conjunction with other &lt;a href="http://www.swpatterns.com/pattern_types/creational/">creational&lt;/a> patterns in order to ease the development of services.&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
-&lt;h2 id="examples">Examples&lt;/h2></description></item></channel></rss>
+&lt;p>Typical usage for the Singleton pattern is the management of a single centralized state with the warranty that nothing that is not part of the singleton interface will touch it.&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>Angular services are (per default) singletons. These services are instantiated by the framework and can be used directly through Dependency Injection.&lt;/li>
+&lt;/ul></description></item></channel></rss>
