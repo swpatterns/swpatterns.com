@@ -14,4 +14,4 @@ Singleton design pattern enables us to guarantee unicity and a single entry poin
 Typical usage for the Singleton pattern is the management of a single centralized state with the warranty that nothing that is not part of the singleton interface will touch it.
 
 ## Examples
-* Angular services are (per default) singletons. These services are instantiated by the framework and can be used directly through [Dependency Injection]({{< ref "/pattern/inversion_of_control" >}}).
+* Angular services are (per default) singletons. These services are instantiated by the framework and can be used directly through Dependency Injection.
