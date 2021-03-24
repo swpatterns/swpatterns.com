@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Patterns on SWPatterns.com</title><link>http://www.swpatterns.com/pattern/</link><description>Recent content in Patterns on SWPatterns.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 23 Mar 2021 11:29:42 +0100</lastBuildDate><atom:link href="http://www.swpatterns.com/pattern/index.xml" rel="self" type="application/rss+xml"/><item><title>Composite</title><link>http://www.swpatterns.com/pattern/composite/</link><pubDate>Tue, 23 Mar 2021 11:29:42 +0100</pubDate><guid>http://www.swpatterns.com/pattern/composite/</guid><description>
-&lt;h1 id="composite">Composite&lt;/h1>
-&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>The Composite Pattern enables us to collect objects into trees that can be easily explored.
+The Parent represents the access point to the tree, where it in fact will be a Container, usually. The container will be able to contain other Container objects or Leaf objects.&lt;/p>
+&lt;p>Often the sublcasses or the leaves can be instantiated thorugh the various factory patterns.&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
-&lt;h2 id="examples">Examples&lt;/h2></description></item><item><title>Cargo Cult Programming</title><link>http://www.swpatterns.com/pattern/cargo_cult/</link><pubDate>Fri, 19 Mar 2021 11:01:47 +0100</pubDate><guid>http://www.swpatterns.com/pattern/cargo_cult/</guid><description>
+&lt;p>Typical example is the file system. every folder and every single file are files. Folders contain also other files.&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;ul>
+&lt;li>File system&lt;/li>
+&lt;/ul></description></item><item><title>Cargo Cult Programming</title><link>http://www.swpatterns.com/pattern/cargo_cult/</link><pubDate>Fri, 19 Mar 2021 11:01:47 +0100</pubDate><guid>http://www.swpatterns.com/pattern/cargo_cult/</guid><description>
 &lt;p>Cargo Cult Programming gets its name from the Cargo Cults in Melanesia. The concept is simple: the hope that the same approach to a problem might solve an issue within our system without the understanding of both context and language or libraries.&lt;/p>
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;ul>
