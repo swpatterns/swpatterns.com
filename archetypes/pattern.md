@@ -9,10 +9,12 @@ diagram: ""
 code: true
 ---
 
-# {{ replace .Name "-" " " | title }}
-
-## Intro
+The {{ replace .Name "-" " " | title }} pattern ...
 
 ## Usage
 
+This pattern finds its typical use ...
+
 ## Examples
+
+* Use case 1
