@@ -1,5 +1,5 @@
 ---
-title: "Liskov"
+title: "Liskov Substitution Principle"
 date: 2021-03-25T10:42:33+01:00
 draft: false
 pattern_types: ["principle",]
