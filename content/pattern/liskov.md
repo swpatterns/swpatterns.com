@@ -11,7 +11,7 @@ code: false
 
 The Liskov Substitution Principle has the following wording:
 
- Let {\displaystyle \phi (x)}\phi (x) be a property provable about objects {\displaystyle x}x of type T. Then {\displaystyle \phi (y)}{\displaystyle \phi (y)} should be true for objects {\displaystyle y}y of type S where S is a subtype of T.
+> Let $ \phi (x) $ be a property provable about objects $ x $ of type $ T $. Then $ \phi (y) $  should be true for objects $ y $ of type $ S $ where $ S $ is a subtype of $ T $.
 
 The principle stems from a base concept that is "An Interface is a contract". the parts that use this interface either as implementations or instantiators are aware of this and have to respect this concept. 
 

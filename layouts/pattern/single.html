@@ -1,5 +1,6 @@
 {{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
 {{ define "main" }}
+
 {{- $s := .Site.Params }}
 {{- $p := .Params }}
     <div class="{{ if ne $p.singleColumn true }}grid-inverse {{ end }}wrap content">
